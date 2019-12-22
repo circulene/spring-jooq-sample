@@ -9,10 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProjectIssueDto {
-    String projectName;
-    String projectVersion;
-    String releaseName;
-    String releaseVersion;
-    String issueName;
+public class ProjectDto {
+    private int id;
+    private String name;
+    private String version;
 }
