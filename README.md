@@ -6,11 +6,11 @@ An example project to learn how to use Spring Boot with JOOQ and Flyway.
 - Maven 3.6.x
 
 ## Dependency
-- Spring Boot - DI framework
+- [Spring Boot](https://spring.io/projects/spring-boot) - DI framework
 - [JOOQ](https://www.jooq.org/) - Type safe query generator
 - [Flyway](https://flywaydb.org/) - DB migration library
 - [H2 Database](http://www.h2database.com/html/main.html) - Lightweight DB engine
-
+- [Lombok](https://projectlombok.org/) - Java boilerplate code generator
 
 ## Quick tour
 
