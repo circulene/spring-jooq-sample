@@ -1,22 +1,22 @@
 package com.circulene.springjooqexample.service;
 
-import static com.circulene.springjooqexample.model.public_.tables.Issue.ISSUE;
-import static com.circulene.springjooqexample.model.public_.tables.Project.PROJECT;
-import static com.circulene.springjooqexample.model.public_.tables.ProjectRelease.PROJECT_RELEASE;
-import static com.circulene.springjooqexample.model.public_.tables.ProjectReleaseIssue.PROJECT_RELEASE_ISSUE;
-import static com.circulene.springjooqexample.model.public_.tables.Release.RELEASE;
+import static com.circulene.springjooqexample.model.tables.Issue.ISSUE;
+import static com.circulene.springjooqexample.model.tables.Project.PROJECT;
+import static com.circulene.springjooqexample.model.tables.ProjectRelease.PROJECT_RELEASE;
+import static com.circulene.springjooqexample.model.tables.ProjectReleaseIssue.PROJECT_RELEASE_ISSUE;
+import static com.circulene.springjooqexample.model.tables.Release.RELEASE;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
-import com.circulene.springjooqexample.dto.ProjectDto;
-import com.circulene.springjooqexample.dto.ProjectIssueDto;
-import com.circulene.springjooqexample.model.public_.tables.records.ProjectRecord;
 
 import org.jooq.DSLContext;
 import org.jooq.Record5;
 import org.jooq.Result;
 import org.springframework.stereotype.Service;
+
+import com.circulene.springjooqexample.dto.ProjectDto;
+import com.circulene.springjooqexample.dto.ProjectIssueDto;
+import com.circulene.springjooqexample.model.tables.records.ProjectRecord;
 
 import lombok.RequiredArgsConstructor;
 
