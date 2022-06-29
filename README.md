@@ -2,8 +2,7 @@
 An example project to learn how to use Spring Boot with JOOQ and Flyway.
 
 ## Prerequisite
-- JDK 1.8 or later
-- Maven 3.6.x
+- JDK 17 or later
 
 ## Dependency
 - [Spring Boot](https://spring.io/projects/spring-boot) - DI framework
@@ -14,9 +13,14 @@ An example project to learn how to use Spring Boot with JOOQ and Flyway.
 
 ## Quick tour
 
+- Prepare database.
+~~~sh
+$ ./mvnw flyway:migrate
+~~~
+
 - Run spring boot application.
 ~~~sh
-$ mvn spring-boot:run
+$ ./mvnw spring-boot:run
 ~~~
 
 - Execute curl command.
@@ -66,6 +70,12 @@ sql>
 ### 
 
 Invoke 
+
+~~~sh
+$ ./mvnw flyway:migrate
+~~~
+
+or 
 
 ~~~sh
 $ flyway -user=sa -password= -url=jdbc:h2:~/spring-jooq-sample -locations=filesystem:$(pwd)/db/migration info
